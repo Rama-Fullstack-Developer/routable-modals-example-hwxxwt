@@ -13,6 +13,7 @@ import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
 export class ModalContainerComponent implements OnDestroy {
   destroy = new Subject<any>();
   currentDialog = null;
+  data:any;
 
   constructor(
     private modalService: NgbModal,
